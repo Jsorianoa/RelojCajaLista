@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloy y Caja</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initClock(), seleccionUn()">
+    <div class="container">
+        <div class="datetime">
+            <div class="date">
+                <span id="dia">Día</span>
+                <span id="dianum">00</span>
+                <span id="mes">Mes</span>
+                <span id="año">Año</span>
+            </div>
+            <div class="time">
+                <span id="hora">00</span>:
+                <span id="minuto">00</span>:
+                <span id="segundo">00</span>
+                <span id="ampm">AM</span>
+            </div>
+        </div>
+    
+        <div class="caja">
+            <h2>Ingresa Tu Mensaje</h2>
+            <textarea name="caja" id="areatexto" cols="80" rows="15"></textarea>
+            <p class="">Caracteres Diponibles: <span id="numCaract">30</span></p>
+        </div>
+    </div>  
+    <div id="select" class="container2"></div>
+    <script src="index.js"></script>
+</body>
+</html>
